@@ -6,6 +6,7 @@ yes | heroku keys:add
 git config user.email "you@example.com"
 git config user.name "Travis CI"
 
+git checkout master
 git add target
 git commit -m "update target"
 
