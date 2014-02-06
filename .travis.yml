@@ -3,5 +3,4 @@ script: ./build.sh
 after_success: ./deploy.sh
 env:
   global:
-    secure:
-      secure: VO6ZPlq8nigFnSwy+d6dr9yNtyUD1ofUvy3GfFNCu68kxiubjq7RK0+5pkOgrY8/5pEBYPGyEYSxJd/IVi/O6w8iTeZ0Ozws9Xe7DYiBfXQ7+4nJF2S4uizNZvAnDg5Q9Rv3Sj7RFMNYed/ajXeG8HtFKzI9uoM8maM8rexnrPE=
+    secure: VO6ZPlq8nigFnSwy+d6dr9yNtyUD1ofUvy3GfFNCu68kxiubjq7RK0+5pkOgrY8/5pEBYPGyEYSxJd/IVi/O6w8iTeZ0Ozws9Xe7DYiBfXQ7+4nJF2S4uizNZvAnDg5Q9Rv3Sj7RFMNYed/ajXeG8HtFKzI9uoM8maM8rexnrPE=
