@@ -1,2 +1,3 @@
 install: ./install.sh
 script: ./build.sh
+after_script: ./clean.sh
