@@ -1,14 +1,7 @@
 install: ./install.sh
 script: ./build.sh
-after_script: ./clean.sh
-deploy:
-  provider: heroku
-  api_key:
-    secure: HTYHcc5EduIndCHofbqZoNSn/KakNtgp0KPu4vc5UoGxCirjhJEK0ZOtcgpV+lxpyyayG/L19ScuJP5bdUHSZ5uo3gV3rvZhbYo+l1FPm3Lihx7e6jtiZ5Du+dSW6lLhGNFa1CE6zk2DguUYzspfiAIPywb23IDJvuWOu83jaUE=
-  app: dxr
-  on:
-    repo: node-app/DXR
-  skip_cleanup: true
-  run:
-    - "git submodule update --init --recursive"
-    - restart
+after_success: ./deploy.sh
+env:
+  global:
+    secure:
+      secure: VO6ZPlq8nigFnSwy+d6dr9yNtyUD1ofUvy3GfFNCu68kxiubjq7RK0+5pkOgrY8/5pEBYPGyEYSxJd/IVi/O6w8iTeZ0Ozws9Xe7DYiBfXQ7+4nJF2S4uizNZvAnDg5Q9Rv3Sj7RFMNYed/ajXeG8HtFKzI9uoM8maM8rexnrPE=
