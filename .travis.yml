@@ -8,3 +8,4 @@ deploy:
   app: dxr
   on:
     repo: node-app/DXR
+  skip_cleanup: true
