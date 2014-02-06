@@ -1,3 +1,10 @@
 install: ./install.sh
 script: ./build.sh
 after_script: ./clean.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: HTYHcc5EduIndCHofbqZoNSn/KakNtgp0KPu4vc5UoGxCirjhJEK0ZOtcgpV+lxpyyayG/L19ScuJP5bdUHSZ5uo3gV3rvZhbYo+l1FPm3Lihx7e6jtiZ5Du+dSW6lLhGNFa1CE6zk2DguUYzspfiAIPywb23IDJvuWOu83jaUE=
+  app: dxr
+  on:
+    repo: node-app/DXR
