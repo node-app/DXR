@@ -3,6 +3,9 @@ echo "heroku.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAu8erSx6jh+8ztsfHwkNeFr/SZaS
 git remote add heroku git@heroku.com:dxr.git
 yes | heroku keys:add
 
+git config user.email "you@example.com"
+git config user.name "Travis CI"
+
 git add target
 git commit -m "update target"
 
