@@ -9,3 +9,6 @@ deploy:
   on:
     repo: node-app/DXR
   skip_cleanup: true
+  run:
+    - "git submodule update --init --recursive"
+    - restart
