@@ -1,2 +1,2 @@
-install: make dep
-script: make build
+install: ./install.sh
+script: make
