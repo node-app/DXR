@@ -11,9 +11,7 @@ dep_clang:
 	export PATH=$PATH:~/clang+llvm-3.2-x86_64-linux-ubuntu-12.04/bin
 
 dep_dxr:
-	cd dxr
-	pip install -r requirements.txt
-	LLVM_CONFIG=~/clang+llvm-3.2-x86_64-linux-ubuntu-12.04/bin/llvm-config make
-	python setup.py install
-	cd tests/test_basic
-	make
+	pip install -r dxr/requirements.txt
+	cd dxr && LLVM_CONFIG=~/clang+llvm-3.2-x86_64-linux-ubuntu-12.04/bin/llvm-config make
+	cd dxr && python setup.py install
+	cd dxr/tests/test_basic && make
